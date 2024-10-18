@@ -1,4 +1,4 @@
-Video Caption Generation
+**Video Caption Generation**
 
 This assignment is all about building, training and testing the model to generate captions for a given set of videos and analyzing the BLEU score using a sequence-to-sequence model with attention mechanism. As a part of training the model, we trained the model and the model is stored in file hw2_model_laxman.h5.
 
@@ -15,7 +15,6 @@ python3 training_model.py /local/path/training_data/feat  /local/path/training_l
 Replace /local/path with the path in your local system. This will run for 200 epochs and generates required trained model and object files needed for testing.
 
 **Model Testing**
-   
 For testing, there are a couple of options.
 You can directly run testing_model.py before training the model, but it requires the trained model (.h5), object files (.obj). If those files are not present, please choose option (b).
 Here, you have to follow Step-1: Model Training which will generate the required files for testing and run the below command.
