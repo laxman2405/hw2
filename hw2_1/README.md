@@ -6,15 +6,15 @@ Instructions to run the code
 
 The code is run in two steps ie., training and testing.
 
-1. Model Training
-   
+**Model Training**
+
 This is the first step to train the model from ground level and this is responsible for iterating over multiple epochs, vocabulary building and training the model. We are performing training in training_model.py and it expects 2 arguments. First, the training_data feat folder and second, training_label.json file as given in the data set. Below is the example,
 
 python3 training_model.py /local/path/training_data/feat  /local/path/training_label.json
 
 Replace /local/path with the path in your local system. This will run for 200 epochs and generates required trained model and object files needed for testing.
 
-2. Model Testing
+**Model Testing**
    
 For testing, there are a couple of options.
 You can directly run testing_model.py before training the model, but it requires the trained model (.h5), object files (.obj). If those files are not present, please choose option (b).
