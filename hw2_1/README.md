@@ -3,6 +3,7 @@ Video Caption Generation
 This assignment is all about building, training and testing the model to generate captions for a given set of videos and analyzing the BLEU score using a sequence-to-sequence model with attention mechanism. As a part of training the model, we trained the model and the model is stored in file hw2_model_laxman.h5.
 
 Instructions to run the code
+
 The code is run in two steps ie., training and testing.
 
 1. Model Training
