@@ -1,11 +1,6 @@
-**Video Caption Generation
-**
-This assignment is all about building, training and testing the model to generate captions for a given set of videos and analyzing the BLEU score. As a part of training the model, we trained the model and the model is stored in file hw2_model_laxman.h5. Due to the large size of the file, it had difficulties in uploading and downloading from Github. So, I have uploaded the model to the drive link mentioned below.
+Video Caption Generation
 
-Model Drive Link: 
-
-Download the model from above and place it in the same folder as testing_model.py to get the BLEU score. Also, this assignment is performed using CUDA, so testing this model on CUDA supported machines will attain results without any issues.
-
+This assignment is all about building, training and testing the model to generate captions for a given set of videos and analyzing the BLEU score using a sequence-to-sequence model with attention mechanism. As a part of training the model, we trained the model and the model is stored in file hw2_model_laxman.h5.
 
 Instructions to run the code
 The code is run in two steps ie., training and testing.
@@ -22,9 +17,10 @@ For testing, there are a couple of options.
 You can directly run testing_model.py before training the model, but it requires the trained model (.h5), object files (.obj). If those files are not present, please choose option (b).
 Here, you have to follow Step-1: Model Training which will generate the required files for testing and run the below command.
 	
-	sh hw2_seq2seq.sh /local/path/testing_data/feat captions.txt
+sh hw2_seq2seq.sh /local/path/testing_data/feat captions.txt
 	
-	Replace /local/path with the path in the local system and this will generate a new file     captions.txt containing all the predicted captions for the videos, along with the BELU score.
+Replace /local/path with the path in the local system and this will generate a new file captions.txt containing all the predicted captions for the videos, along with the BELU score. 
+
 
 Below is the brief description of each of the python files used for generating captions.
 
