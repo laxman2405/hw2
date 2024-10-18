@@ -15,6 +15,7 @@ python3 training_model.py /local/path/training_data/feat  /local/path/training_l
 Replace /local/path with the path in your local system. This will run for 200 epochs and generates required trained model and object files needed for testing.
 
 **Model Testing**
+
 For testing, there are a couple of options.
 You can directly run testing_model.py before training the model, but it requires the trained model (.h5), object files (.obj). If those files are not present, please choose option (b).
 Here, you have to follow Step-1: Model Training which will generate the required files for testing and run the below command.
@@ -26,7 +27,7 @@ Replace /local/path with the path in the local system and this will generate a n
 
 Below is the brief description of each of the python files used for generating captions.
 
-Training_model.py
+**Training_model.py**
 
 1. TrainingData Class
    
@@ -52,7 +53,8 @@ Initializes the Encoder, decoder and Seq2Seq model with the required parameters.
 Then, the loss function is passed to the train_model() to compute losses and store them in calculates_losses.txt file.
 The trained model is saved in hw2_model_laxman.h5 file.
 
-Process_videos.py
+
+**Process_videos.py**
 
 This file prepares to generate vocabulary mappings by filtering out low-frequency words. Below are the steps involved in the get_mappings()
 
@@ -60,7 +62,10 @@ Initially, read all the video features files available in the given training dat
 Next, load the captions of those videos from the training json file and using the regular expressions remove unwanted characters.
 Now, to build vocabulary we set min_word_count to 4 and filter out words fewer than 4 and create word-to-index and index-to-word mappings using special tokens such as <pad> (padding), <bos> (beginning of sentence), <eos> (end of sentence), and <unk> (unknown).
 We list out a few video statistics and return back index mappings to the training_model.py file.
-Seq_2_Seq_model.py
+
+
+**Seq_2_Seq_model.py**
+
 This implements a sequence-to-sequence model for captions generation and has few components as listed below
 
 1. Attention
@@ -86,7 +91,8 @@ This is used as a wrapper to setup interaction between encoder and decoder and i
 Training mode uses teacher forcing, Inference mode generates sequences without ground truth and beam search improves outputs during decoding.
 
 
-Testing_model.py
+
+**Testing_model.py**
 
 1. TestDataSet Class
    
