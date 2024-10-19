@@ -72,7 +72,7 @@ Load the trained model and invoke test_model to generate predictions and calcula
 
 **Final Results**
 
-Once the training and testing has bee completed, the code generated captions.txt file containing all the predicted captions for the tesitng videos and the BLEU score is calcualted to be 0.643.
+Once the training and testing has bee completed, the code generated captions.txt file containing all the predicted captions for the testing videos and the average BLEU score is calcualted to be 0.643.
 
 
 
