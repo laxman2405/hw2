@@ -20,7 +20,7 @@ Here, you have to follow Step-1: Model Training which will generate the required
 	
 sh hw2_seq2seq.sh /local/path/testing_data/feat captions.txt
 	
-Replace /local/path with the path in the local system and this will generate a new file captions.txt containing all the predicted captions for the videos, along with the BELU score. 
+Replace /local/path with the path in the local system and this will generate a new file captions.txt containing all the predicted captions for the videos, along with the BLEU score. 
 
 
 Below is the brief description of each of the python files used for generating captions.
